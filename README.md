@@ -1,4 +1,4 @@
-# 📚 DocuTalk-AI: Intelligent Multi-PDF Conversational Agent
+# DocuTalk-AI: Intelligent Multi-PDF Conversational Agent
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
@@ -45,4 +45,29 @@ In the demonstration, DocuTalk-AI was used to analyze a standard **Rent Agreemen
 3. **Embedding Generation**: Text chunks are converted into dense vector representations using HuggingFace's MiniLM model.
 4. **Vector Storage**: The embeddings are indexed in a local FAISS database for lightning-fast similarity search.
 5. **Retrieval & Generation**: When a user asks a question, the system queries the FAISS index for the most relevant chunks, injects them into a prompt alongside the conversation history, and sends it to the selected LLM to generate a coherent answer.
+
+
+
+## 💡 Step-by-Step Usage Guide
+1. **Launch the Basic GUI**: Start the Streamlit application and select your preferred open-source model from the sidebar dropdown.
+
+<img width="1917" height="1021" alt="image" src="https://github.com/user-attachments/assets/e246cbf4-a529-4304-b05d-a870918dd2f8" />
+
+
+2. **Upload Documents**: Drag and drop your PDF files (e.g., `Rent Agreement.pdf`) into the designated upload area in the sidebar.
+
+
+
+<img width="1917" height="1021" alt="Screenshot 2026-05-11 004306 - Copy" src="https://github.com/user-attachments/assets/cac093b8-af14-47f7-8db5-e74d9f9362a4" />
+
+3. **Process and Create Vectors**: Click the "Process Documents" button. The application will extract the text, split it into chunks, generate embeddings using Hugging Face, and store them in a FAISS vector database.
+
+
+<img width="1912" height="1013" alt="image" src="https://github.com/user-attachments/assets/d4440a2c-f6e5-4d14-8c9a-7275aeb9b3b5" />
+
+
+4. **Ask Questions**: Once processing is complete, use the main chat interface to ask specific questions about your uploaded documents and receive context-aware answers.
+
+
+<img width="1915" height="1015" alt="image" src="https://github.com/user-attachments/assets/0c998d0c-2a28-466a-b786-d44135a0d93c" />
 
